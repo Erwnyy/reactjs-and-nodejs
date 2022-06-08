@@ -1,0 +1,246 @@
+
+/* ============================ITEM PRODUCT=============================== */
+
+.detail_data h1{
+    font-size: 20px;
+}
+
+.detail_data span{
+  font-size: 20px;
+}
+
+.detail_data p{
+  font-size: 20px;
+}
+
+.productDetail_container {
+  padding: 10px 0 40px;
+}
+
+  @media screen and (max-width: 768px) {
+      
+      .detail_data .home_title{
+          font-size: 18px;
+          margin-top: 29rem;
+      }
+
+      .detail_data span{
+        font-size: 17px;
+      }
+
+      .detail_data .home_description{
+        font-size: 15px;
+        padding: 20px;
+        text-align: justify;
+      }
+
+      .home_new {
+        padding: 20px 20px;
+      }
+  }
+
+
+
+  /* =============================================================== */
+
+
+  .product_container {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    display: grid;
+    row-gap: 3rem;
+}
+
+.product_title {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.sneaker {
+    position: relative;
+    display: flex;
+    top: 40px;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f2f2f2;
+    border-radius: .5rem;
+    transition: .5s;
+    margin: 1rem 1rem .5rem;
+}
+
+.sneaker img {
+    width: 390px;
+    position: relative;
+    align-items: center;
+    height: 320px;
+}
+
+.product_img {
+    position: absolute;
+    border-radius: .7rem;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    transition: all 0.5s linear;
+    filter: drop-shadow(0 20px 11px);
+  }
+
+  .sneaker:hover {
+      transform: translateY(5px);
+      box-shadow: 0 10px 50px -10px rgba(150, 170, 180, 100);
+  }
+
+
+.product_name {
+    padding-top: 30px;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.product_dessc {
+    padding-top: 10px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.button-light {
+    background-color: rgb(249, 247, 247);
+    color: black;
+    padding: 15px 10%;
+    margin-top: 30px;
+    border-radius: .5rem;
+    border-style: inset;
+    text-decoration: none;
+    transition: .7s;
+}
+
+.button-light:hover {
+    background: rgb(5, 5, 5);
+    color: white;
+}
+
+
+@media screen and (max-width: 600px) {
+    .product_img {
+        height: 320px;
+        padding-top: 10px;
+    }
+
+    .product_container {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        display: grid;
+        row-gap: 3rem;
+    }
+
+    .product_name {
+        padding-top: 30px;
+        color: black;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .product_dessc {
+        padding-top: 10px;
+        font-size: 15px;
+        text-align: center;
+    }
+}
+
+
+
+
+/* ============================ITEM PRODUCT=============================== */
+
+.swiper {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 60%;
+    top: 50%;
+    margin-left: -150px;
+    margin-top: -150px;
+    z-index: 99;
+  }
+  
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 600px) {
+    .swiper {
+        width: 80%;
+        height: 260px;
+        position: absolute;
+        left: 41%;
+        top: 40%;
+        margin-left: -160px;
+        margin-top: -110px;
+      }
+
+      .detail_data {
+          margin-top: 250px;
+          font-size: .5rem;
+      }
+
+      .button-dark {
+          padding: 14px 30px;
+          border-radius: .5rem;
+          border: none;
+          text-decoration: none;
+          font-size: 12px;
+          margin-left: 70%;
+          background-color: black;
+          color: white;
+      }
+
+      .button-dark:hover{
+        background-color: rgb(60, 58, 58);
+        border: black;
+    }
+  }
+
+  @media screen and (min-width: 600px) {
+    .swiper {
+        width: 80%;
+        height: 260px;
+        position: absolute;
+        left: 41%;
+        top: 40%;
+        margin-left: -189px;
+        margin-top: -110px;
+      }
+
+      .button-dark {
+        padding: 19px 40px;
+        border-radius: .5rem;
+        border: none;
+        text-decoration: none;
+        font-size: 14px;
+        margin-left: 70%;
+        background-color: black;
+        color: white;
+    }
+
+    .button-dark:hover{
+        background-color: rgb(60, 58, 58);
+        border: black;
+    }
+  }
+  
+
+
+
